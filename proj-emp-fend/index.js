@@ -38,10 +38,11 @@ submit.addEventListener("click", () => {
   fetch("https://pcs112-midterm.onrender.com/api/enrollment", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(enrollment),
+    body: JSON.stringify(enrollments),
   }).catch((error) => {
     console.log(error);
   });
   alert("Enrollment added successfully");
   location.reload();
 });
+
