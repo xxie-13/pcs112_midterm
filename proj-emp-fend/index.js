@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
 function getEnrollment() {
   let html = "";
   //FETCH API
-  fetch("https://pcs112-midterm.onrender.com/api/enrollment", {
+  fetch("https://pcs112-midterm.onrender.com/api/enrollmets", {
     mode: "cors",
   })
     .then((response) => {
@@ -35,7 +35,7 @@ submit.addEventListener("click", () => {
   const locationCode = document.querySelector("#locationCode").value;
   const lastUpdated = document.querySelector("#lastUpdated").value;
   const product = { id, productName, category, stockCount, locationCode, lastUpdated };
-  fetch("https://pcs112-midterm.onrender.com/api/enrollment", {
+  fetch("https://pcs112-midterm.onrender.com/api/enrollments", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(enrollments),
@@ -45,4 +45,5 @@ submit.addEventListener("click", () => {
   alert("Enrollment added successfully");
   location.reload();
 });
+
 
