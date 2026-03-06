@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Students Enrollment</title>
+  </head>
+  <body>
+    <h1>Enrollment Info.</h1>
+    <div id="container" style="display: flex">
+      <div id="form" style="padding-right: 5rem; display: inline;"> 
+        <form>
+          <label>Student ID</label>
+          <input type="text" id="id" name="id" required />
+          <label>Student Name</label>
+          <input type="text" id="productName" name="productName" required />
+          <label>Course</label>
+          <input type="text" id="category" name="category" required />
+          <select id="stockcount" name="stockCount">
+            <option value="1">1.</option>
+            <option value="2">2.</option>
+            <option value="3">3</option>
+            <option value="4">1.</option>
+            <option value="5">2.</option>
+          </select>
+          <label>Code</label>
+          <input type="text" id="locationCode" name="locationCode" required />
+          <label>Enroll</label>
+          <button type="submit" id = "add">Add Enrollment</button>
+        </form>
+    </div>
+    <ul id="content"></ul>
+    <script src="index.js"></script>
+  </body>
+</html>
