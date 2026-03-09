@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
 function getEnrollment() {
   let html = "";
   //FETCH API
-  fetch("https://pcs112-midterm.onrender.com/api/enrollmets", {
+  fetch("https://pcs112-midterm.onrender.com/api/enrollments", {
     mode: "cors",
   })
     .then((response) => {
@@ -45,5 +45,6 @@ submit.addEventListener("click", () => {
   alert("Enrollment added successfully");
   location.reload();
 });
+
 
 
